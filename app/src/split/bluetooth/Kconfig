@@ -60,15 +60,15 @@ config ZMK_SPLIT_BLE_CENTRAL_SPLIT_RUN_QUEUE_SIZE
 
 config ZMK_SPLIT_BLE_PREF_INT
     int "Connection interval to use for split central/peripheral connection"
-    default 5
+    default 6
 
 config ZMK_SPLIT_BLE_PREF_LATENCY
     int "Latency to use for split central/peripheral connection"
-    default 20
+    default 30
 
 config ZMK_SPLIT_BLE_PREF_TIMEOUT
     int "Supervision timeout to use for split central/peripheral connection"
-    default 200
+    default 400
 
 endif # ZMK_SPLIT_ROLE_CENTRAL
 
