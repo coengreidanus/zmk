@@ -64,11 +64,11 @@ config ZMK_SPLIT_BLE_PREF_INT
 
 config ZMK_SPLIT_BLE_PREF_LATENCY
     int "Latency to use for split central/peripheral connection"
-    default 30
+    default 40
 
 config ZMK_SPLIT_BLE_PREF_TIMEOUT
     int "Supervision timeout to use for split central/peripheral connection"
-    default 500
+    default 600
 
 endif # ZMK_SPLIT_ROLE_CENTRAL
 
@@ -80,7 +80,7 @@ config ZMK_SPLIT_BLE_PERIPHERAL_STACK_SIZE
 
 config ZMK_SPLIT_BLE_PERIPHERAL_PRIORITY
     int "BLE split peripheral notify thread priority"
-    default 5
+    default 1
 
 config ZMK_SPLIT_BLE_PERIPHERAL_POSITION_QUEUE_SIZE
     int "Max number of key position state events to queue to send to the central"
